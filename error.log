@@ -1,0 +1,1003 @@
+
+2022-05-28 18:14:14,895 INFO: errors [in app.py:667]
+2022-05-28 18:14:22,800 ERROR: Exception on /venues/1 [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000002C099C0D048 (otid=0x000002C099C0A1D8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 188, in show_venue
+    venue = Venue.query.get(venue_id)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:14:29,375 ERROR: Exception on /venues [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000002C099BB60F8 (otid=0x000002C099CF2DB8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 134, in venues
+    venues_location = Venue.query.group_by(Venue.id, Venue.city, Venue.state).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:14:31,338 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000002C099CFDBF8 (otid=0x000002C099CCAEA8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:15:03,525 INFO: errors [in app.py:667]
+2022-05-28 18:15:07,394 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000002C099D16EB8 (otid=0x000002C099D1F408) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:15:08,685 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000002C099C0D938 (otid=0x000002C099D1FE58) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:15:18,879 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000002C099D16518 (otid=0x000002C099D19EF8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:15:19,880 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000002C099CFD678 (otid=0x000002C099D25B88) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:15:32,308 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA19468E08 (otid=0x000001BA19465318) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:15:38,848 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA1955DD58 (otid=0x000001BA1954CD68) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:15:39,717 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA195733B8 (otid=0x000001BA1952AD68) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:15:40,556 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA19573CA8 (otid=0x000001BA1952AE08) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:16:00,040 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA19573518 (otid=0x000001BA19583A48) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:16:01,156 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA19573468 (otid=0x000001BA19583F48) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:16:01,894 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA19573258 (otid=0x000001BA19579318) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:16:03,159 ERROR: Exception on /venues [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA1958B518 (otid=0x000001BA19562D68) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 134, in venues
+    venues_location = Venue.query.group_by(Venue.id, Venue.city, Venue.state).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:16:04,725 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA1958B888 (otid=0x000001BA1958D278) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 313, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:16:05,594 ERROR: Exception on /shows [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA1955DCA8 (otid=0x000001BA19562EF8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 568, in shows
+    shows = Show.query.join(Artist,Venue).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 18:16:07,510 ERROR: Exception on /venues [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x000001BA1946A3B8 (otid=0x000001BA1958DE08) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 134, in venues
+    venues_location = Venue.query.group_by(Venue.id, Venue.city, Venue.state).all()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask_sqlalchemy\__init__.py", line 175, in __init__
+    track_modifications = app.config['SQLALCHEMY_TRACK_MODIFICATIONS']
+KeyError: 'SQLALCHEMY_TRACK_MODIFICATIONS'
+2022-05-28 20:56:45,332 INFO: errors [in app.py:566]
+2022-05-28 20:57:56,607 ERROR: Exception on /artists/1 [GET] [in C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Artist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 294, in show_artist
+  File "<string>", line 2, in get
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\deprecations.py", line 401, in warned
+    return fn(*args, **kwargs)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\query.py", line 943, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\query.py", line 955, in _get_impl
+    execution_options=self._execution_options,
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 2900, in _get_impl
+    load_options=load_options,
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\loading.py", line 534, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\ven\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Artist
+[SQL: SELECT "Artist".id AS "Artist_id", "Artist".name AS "Artist_name", "Artist".city AS "Artist_city", "Artist".state AS "Artist_state", "Artist".phone AS "Artist_phone", "Artist".genres AS "Artist_genres", "Artist".image_link AS "Artist_image_link", "Artist".facebook_link AS "Artist_facebook_link", "Artist".website_link AS "Artist_website_link", "Artist".seeking_venue AS "Artist_seeking_venue", "Artist".seeking_description AS "Artist_seeking_description" 
+FROM "Artist" 
+WHERE "Artist".id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-28 22:28:40,082 INFO: errors [in C:\Users\Onyeka\One_Project\Fire\app.py:563]
+2022-05-28 22:29:33,131 ERROR: Exception on /venues/1 [GET] [in C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Venue
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Onyeka\One_Project\Fire\app.py", line 123, in show_venue
+    venue = Venue.query.get(venue_id)
+  File "<string>", line 2, in get
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\deprecations.py", line 401, in warned
+    return fn(*args, **kwargs)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 943, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 955, in _get_impl
+    execution_options=self._execution_options,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 2900, in _get_impl
+    load_options=load_options,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\loading.py", line 534, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Venue
+[SQL: SELECT "Venue".id AS "Venue_id", "Venue".name AS "Venue_name", "Venue".city AS "Venue_city", "Venue".state AS "Venue_state", "Venue".address AS "Venue_address", "Venue".phone AS "Venue_phone", "Venue".genres AS "Venue_genres", "Venue".image_link AS "Venue_image_link", "Venue".facebook_link AS "Venue_facebook_link", "Venue".website_link AS "Venue_website_link", "Venue".seeking_talent AS "Venue_seeking_talent", "Venue".seeking_description AS "Venue_seeking_description" 
+FROM "Venue" 
+WHERE "Venue".id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-28 22:30:13,231 ERROR: Exception on /venues/1 [GET] [in C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Venue
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Onyeka\One_Project\Fire\app.py", line 123, in show_venue
+    venue = Venue.query.get(venue_id)
+  File "<string>", line 2, in get
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\deprecations.py", line 401, in warned
+    return fn(*args, **kwargs)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 943, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 955, in _get_impl
+    execution_options=self._execution_options,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 2900, in _get_impl
+    load_options=load_options,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\loading.py", line 534, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Venue
+[SQL: SELECT "Venue".id AS "Venue_id", "Venue".name AS "Venue_name", "Venue".city AS "Venue_city", "Venue".state AS "Venue_state", "Venue".address AS "Venue_address", "Venue".phone AS "Venue_phone", "Venue".genres AS "Venue_genres", "Venue".image_link AS "Venue_image_link", "Venue".facebook_link AS "Venue_facebook_link", "Venue".website_link AS "Venue_website_link", "Venue".seeking_talent AS "Venue_seeking_talent", "Venue".seeking_description AS "Venue_seeking_description" 
+FROM "Venue" 
+WHERE "Venue".id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-28 22:30:14,200 ERROR: Exception on /venues/1 [GET] [in C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Venue
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Onyeka\One_Project\Fire\app.py", line 123, in show_venue
+    venue = Venue.query.get(venue_id)
+  File "<string>", line 2, in get
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\deprecations.py", line 401, in warned
+    return fn(*args, **kwargs)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 943, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 955, in _get_impl
+    execution_options=self._execution_options,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 2900, in _get_impl
+    load_options=load_options,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\loading.py", line 534, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Venue
+[SQL: SELECT "Venue".id AS "Venue_id", "Venue".name AS "Venue_name", "Venue".city AS "Venue_city", "Venue".state AS "Venue_state", "Venue".address AS "Venue_address", "Venue".phone AS "Venue_phone", "Venue".genres AS "Venue_genres", "Venue".image_link AS "Venue_image_link", "Venue".facebook_link AS "Venue_facebook_link", "Venue".website_link AS "Venue_website_link", "Venue".seeking_talent AS "Venue_seeking_talent", "Venue".seeking_description AS "Venue_seeking_description" 
+FROM "Venue" 
+WHERE "Venue".id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-28 22:30:15,784 ERROR: Exception on /venues [GET] [in C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Venue
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Onyeka\One_Project\Fire\app.py", line 67, in venues
+    venues_location = Venue.query.group_by(Venue.id, Venue.city, Venue.state).all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2906, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Venue
+[SQL: SELECT "Venue".id AS "Venue_id", "Venue".name AS "Venue_name", "Venue".city AS "Venue_city", "Venue".state AS "Venue_state", "Venue".address AS "Venue_address", "Venue".phone AS "Venue_phone", "Venue".genres AS "Venue_genres", "Venue".image_link AS "Venue_image_link", "Venue".facebook_link AS "Venue_facebook_link", "Venue".website_link AS "Venue_website_link", "Venue".seeking_talent AS "Venue_seeking_talent", "Venue".seeking_description AS "Venue_seeking_description" 
+FROM "Venue" GROUP BY "Venue".id, "Venue".city, "Venue".state]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-28 22:30:17,054 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Artist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Onyeka\One_Project\Fire\app.py", line 249, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2906, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Artist
+[SQL: SELECT "Artist".id AS "Artist_id", "Artist".name AS "Artist_name", "Artist".city AS "Artist_city", "Artist".state AS "Artist_state", "Artist".phone AS "Artist_phone", "Artist".genres AS "Artist_genres", "Artist".image_link AS "Artist_image_link", "Artist".facebook_link AS "Artist_facebook_link", "Artist".website_link AS "Artist_website_link", "Artist".seeking_venue AS "Artist_seeking_venue", "Artist".seeking_description AS "Artist_seeking_description" 
+FROM "Artist" GROUP BY "Artist".id, "Artist".name]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-28 22:30:17,850 ERROR: Exception on /shows [GET] [in C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Show
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Onyeka\One_Project\Fire\app.py", line 501, in shows
+    shows = Show.query.join(Artist,Venue).all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2906, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Show
+[SQL: SELECT "Show".id AS "Show_id", "Show".venue_id AS "Show_venue_id", "Show".artist_id AS "Show_artist_id", "Show".start_time AS "Show_start_time" 
+FROM "Show" JOIN "Artist" ON "Artist".id = "Show".artist_id JOIN "Venue" ON "Venue".id = "Show".venue_id]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-28 22:30:19,632 ERROR: Exception on /venues [GET] [in C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Venue
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Onyeka\One_Project\Fire\app.py", line 67, in venues
+    venues_location = Venue.query.group_by(Venue.id, Venue.city, Venue.state).all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2906, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Venue
+[SQL: SELECT "Venue".id AS "Venue_id", "Venue".name AS "Venue_name", "Venue".city AS "Venue_city", "Venue".state AS "Venue_state", "Venue".address AS "Venue_address", "Venue".phone AS "Venue_phone", "Venue".genres AS "Venue_genres", "Venue".image_link AS "Venue_image_link", "Venue".facebook_link AS "Venue_facebook_link", "Venue".website_link AS "Venue_website_link", "Venue".seeking_talent AS "Venue_seeking_talent", "Venue".seeking_description AS "Venue_seeking_description" 
+FROM "Venue" GROUP BY "Venue".id, "Venue".city, "Venue".state]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-28 22:30:25,865 ERROR: Exception on /artists [GET] [in C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py:1456]
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: Artist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Onyeka\One_Project\Fire\app.py", line 249, in artists
+    artists = Artist.query.group_by(Artist.id, Artist.name).all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\query.py", line 2906, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\orm\session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Onyeka\One_Project\Fire\tuma\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: Artist
+[SQL: SELECT "Artist".id AS "Artist_id", "Artist".name AS "Artist_name", "Artist".city AS "Artist_city", "Artist".state AS "Artist_state", "Artist".phone AS "Artist_phone", "Artist".genres AS "Artist_genres", "Artist".image_link AS "Artist_image_link", "Artist".facebook_link AS "Artist_facebook_link", "Artist".website_link AS "Artist_website_link", "Artist".seeking_venue AS "Artist_seeking_venue", "Artist".seeking_description AS "Artist_seeking_description" 
+FROM "Artist" GROUP BY "Artist".id, "Artist".name]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
