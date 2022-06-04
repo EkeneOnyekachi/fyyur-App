@@ -36,10 +36,12 @@ genres_choices = [
 
 
 def validate_phone(self, phone):
-    p = phonenumbers.parse(phone.data)
-    if not phonenumbers.is_valid_number(p):
-        raise ValidationError("invalid phone number.")
-
+    try:
+        p = phonenumbers.parse(phone.data)
+        if not phonenumbers.is_valid_number(p):
+            raise ValueError()
+    except(phonenumbers.phonenumberutil.NumberParseException, ValueError):
+        raise ValidationError("invalid phone number")
 
 def validate_genres(self, genres):
     genres_values = [choice[1] for choice in genres_choices]
@@ -47,12 +49,14 @@ def validate_genres(self, genres):
         if value not in genres_values:
             raise ValidationError("invalid genres.")
 
-
 def validate_facebook_link(self, facebook_link):
     facebook_url = '^(?:https?:(?:/{1,3}|[a-zA-Z.\-]+[.](?:com)/)$' 
     match = re.search(facebook_url, facebook_link.data) 
     if not match:
-        raise ValidationError("Error, facebook link not valid")        
+        raise ValidationError("Error, facebook link not valid")             
+               
+
+      
 
 
 class ShowForm(FlaskForm):
@@ -129,7 +133,7 @@ class VenueForm(FlaskForm):
     genres = SelectMultipleField(
         "genres", validators=[DataRequired()], choices=genres_choices
     )
-    facebook_link = StringField("facebook_link", validators=[URL(), validate_facebook_link])
+    facebook_link = StringField("facebook_link", validators=[URL(),validate_facebook_link])
     website_link = StringField("website_link")
 
     seeking_talent = BooleanField("seeking_talent")
@@ -204,7 +208,7 @@ class ArtistForm(FlaskForm):
     )
     facebook_link = StringField(
         "facebook_link",
-        validators=[URL(), validate_facebook_link],
+        validators=[URL(), validate_facebook_link]
     )
 
     website_link = StringField("website_link")
