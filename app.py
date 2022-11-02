@@ -21,6 +21,7 @@ app.config.from_object("config")
 db.init_app(app)
 migrate = Migrate(app, db)
 
+#blueprint
 app.register_blueprint(venue, url_prefix="")
 app.register_blueprint(artist, url_prefix="")
 app.register_blueprint(show, url_prefix="")
